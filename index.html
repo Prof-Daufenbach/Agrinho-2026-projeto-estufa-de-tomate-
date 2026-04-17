@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AgroSustentável</div>
+            <button id="theme-toggle">Alternar Modo</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a produção de alimentos e o cuidado com o meio ambiente.</p>
+        </section>
+
+        <section class="content">
+            <div class="card" onclick="mostrarDica('tecnologia')">
+                <h3>Tecnologia</h3>
+                <p>O uso de drones e IA para reduzir o desperdício.</p>
+            </div>
+            <div class="card" onclick="mostrarDica('preservacao')">
+                <h3>Preservação</h3>
+                <p>Manter matas ciliares e biodiversidade local.</p>
+            </div>
+            <div class="card" onclick="mostrarDica('solo')">
+                <h3>Cuidado com o Solo</h3>
+                <p>Plantio direto e rotação de culturas.</p>
+            </div>
+        </section>
+
+        <div id="mensagem-alerta" class="hidden">
+            <p id="texto-alerta"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Agrinho - Ensino Médio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

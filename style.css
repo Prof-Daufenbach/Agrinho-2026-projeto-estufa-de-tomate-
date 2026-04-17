@@ -1,0 +1,95 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #2d4a22;
+    transition: background 0.3s ease;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 1rem 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#theme-toggle {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background: #a5d6a7;
+    font-weight: bold;
+}
+
+/* Seção Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    color: white;
+}
+
+/* Conteúdo */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 5%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 280px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border: 2px solid #2e7d32;
+}
+
+/* Alerta Dinâmico */
+.hidden { display: none; }
+
+#mensagem-alerta {
+    margin: 20px auto;
+    width: 80%;
+    padding: 15px;
+    background: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1b5e20;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
